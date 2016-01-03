@@ -1,0 +1,25 @@
+{
+  "name": "urbandictionary-alexa",
+  "version": "0.0.0",
+  "description": "An Amazon Alexa skill for defining terms on Urban Dictionary",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "export": "rm -rf tmp && mkdir tmp && cp -r node_modules/* tmp && cp index.js tmp && cd tmp && zip -r urbandictionary.zip * && mv urbandictionary.zip ../exports/ && cd ../exports && node -e \"require('../tmp/index').schema()\" > urbandictionary-schema.json && node -e \"require('../tmp/index').utterances()\" > urbandictionary-utterances.txt && rm -rf ../tmp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MaxwellPayne/urbandictionary-alexa"
+  },
+  "author": "Max McLennan",
+  "bugs": {
+    "url": "https://github.com/MaxwellPayne/urbandictionary-alexa/issues"
+  },
+  "homepage": "https://github.com/MaxwellPayne/urbandictionary-alexa",
+  "dependencies": {
+    "alexa-app": "https://github.com/MaxwellPayne/alexa-app/tarball/master",
+    "ssml": "0.0.3",
+    "urban": "latest",
+    "underscore": "latest"
+  }
+}
