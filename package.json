@@ -17,8 +17,8 @@
   },
   "homepage": "https://github.com/MaxwellPayne/urbandictionary-alexa",
   "dependencies": {
-    "alexa-app": "https://github.com/MaxwellPayne/alexa-app/tarball/master",
-    "ssml": "0.0.3",
+    "alexa-app": "https://github.com/MaxwellPayne/alexa-app/tarball/ssml-library",
+    "ssml": "https://github.com/MaxwellPayne/node-ssml/tarball/master",
     "urban": "latest",
     "underscore": "latest"
   }
