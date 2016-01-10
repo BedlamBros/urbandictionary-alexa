@@ -9,13 +9,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/MaxwellPayne/urbandictionary-alexa"
+    "url": "https://github.com/BedlamBros/urbandictionary-alexa"
   },
-  "author": "Max McLennan",
+  "author": "Bedlam Bros, LLC",
   "bugs": {
-    "url": "https://github.com/MaxwellPayne/urbandictionary-alexa/issues"
+    "url": "https://github.com/BedlamBros/urbandictionary-alexa/issues"
   },
-  "homepage": "https://github.com/MaxwellPayne/urbandictionary-alexa",
+  "homepage": "https://github.com/BedlamBros/urbandictionary-alexa",
   "dependencies": {
     "alexa-app": "https://github.com/MaxwellPayne/alexa-app/tarball/ssml-library",
     "ssml": "0.0.4",
