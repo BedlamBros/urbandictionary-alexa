@@ -15,6 +15,11 @@ var APP_NAME = 'Urban Dictionary',
 
 var app = new alexa.app(APP_NAME);
 
+app.launch(function(req, res) {
+  res.shouldEndSession(false);
+  res.reprompt('What word would you like to define?').send();
+});
+
 app.intent('DefineIntent', {
   'slots': {
     'Term': 'LITERAL'
@@ -30,7 +35,7 @@ app.intent('DefineIntent', {
     'explain the phrase'
       ], function(prefix) {
         return prefix + ' ' + EXAMPLE_TERMS;
-    })
+    }).concat([EXAMPLE_TERMS])
 }, function(req, res) {
   var term = req.slot('Term'),
       definition = null,
